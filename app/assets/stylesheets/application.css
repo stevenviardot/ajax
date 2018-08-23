@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+.titlePage {
+  background-color: wheat;
+  color: white;
+  border-bottom: solid 1px #8e949a;
+  padding: 20px 0px;
+  box-shadow: 0px 3px 3px #343a40;
+}
+
+.rowStyle {
+  padding: 20px 0px 10px 0px;
+}
+
+.leftSide {
+  border: solid 1px #8e949a;
+  box-shadow: 0px 3px 2px #00ffb8;
+  padding: 25px 0px;
+}
+
+.rightSide {
+  border: solid 1px #8e949a;
+  box-shadow: 0px 3px 2px #00ffb8;
+  padding: 25px 0px;
+}
