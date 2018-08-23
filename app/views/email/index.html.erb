@@ -3,13 +3,23 @@
 
 
 <div class="container">
-  <div class="row rowStyle">    
+  <div class="row rowStyle">
     <div class="col-lg-6 col-md-6 col-sm-6  leftSide">
-      <p>left</p>
+      <h3 class="text-center">Boite de reception</h3>
+      <hr>
+      <% @email.each do |email| %>
+        <ul>
+          <li>
+            <a href="#"> <%= email.objet %> </a>
+          </li>
+        </ul>
+      <% end %>
+
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-6 rightSide">
-      <p>right</p>
+      <h3 class="text-center">Contenu du message</h3>
+      <hr>
     </div>
   </div>
 </div>
