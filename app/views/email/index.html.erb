@@ -10,7 +10,7 @@
       <% @email.each do |email| %>
         <ul>
           <li>
-            <a href="#"> <%= email.objet %> </a>
+            <%= link_to email.objet, show_path, class: "email-objet-link", remote: true %>
           </li>
         </ul>
       <% end %>
@@ -20,6 +20,10 @@
     <div class="col-lg-6 col-md-6 col-sm-6 rightSide">
       <h3 class="text-center">Contenu du message</h3>
       <hr>
+      <div class="fullMsg">
+        <%= render "email" %>
+      </div>
+
     </div>
   </div>
 </div>
